@@ -22,3 +22,7 @@ chmod +x sentinel-build.sh
 
 chmod +x sentinel-live-main/sentinel-live-main/build.sh
 ./sentinel-build.sh
+
+ritesh@ubuntu:~/Downloads/Sentinel-OS-main$ chmod +x sentinel-live-main/sentinel-live-main/build.sh 
+ritesh@ubuntu:~/Downloads/Sentinel-OS-main$ ./sentinel-build.sh
+ERROR: You need live-build (>= 1:20250225+kali3), you have 3.0~a57-1ubuntu49.1
