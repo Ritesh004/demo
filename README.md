@@ -24,40 +24,5 @@ chmod +x sentinel-live-main/sentinel-live-main/build.sh
 ./sentinel-build.sh
 
 
-ritesh@ubuntu:~/Downloads/Sentinel-OS-main$ ./sentinel-build.sh
-[sudo] password for ritesh: 
-Build of kali-rolling/minimal/amd64 live image failed (see build.log for details)
-Log: /home/ritesh/Downloads/Sentinel-OS-main/sentinel-live-main/sentinel-live-main/build.log
-ritesh@ubuntu:~/Downloads/Sentinel-OS-main$ /home/ritesh/Downloads/Sentinel-OS-main/sentinel-live-main/sentinel-live-main/build.log
-bash: /home/ritesh/Downloads/Sentinel-OS-main/sentinel-live-main/sentinel-live-main/build.log: Permission denied
-ritesh@ubuntu:~/Downloads/Sentinel-OS-main$ cat /home/ritesh/Downloads/Sentinel-OS-main/sentinel-live-main/sentinel-live-main/build.log
-[2026-04-11 02:12:47] lb_clean --purge
-P: Cleaning chroot
-[2026-04-11 02:12:48] lb_config -a amd64 --distribution kali-rolling -- --variant minimal
-P: Considering defaults defined in /etc/live/build.conf
-W: You have specified a value of LB_ISO_VOLUME that is too long; the maximum length is 32 characters.
-P: Updating config tree for a ubuntu/amd64 system
-W: You have specified a value of LB_ISO_VOLUME that is too long; the maximum length is 32 characters.
-[2026-04-11 02:12:48] lb_build 
-W: You have specified a value of LB_ISO_VOLUME that is too long; the maximum length is 32 characters.
-[2026-04-11 02:12:49] lb_bootstrap 
-P: Setting up cleanup function
-[2026-04-11 02:12:49] lb_bootstrap_cache restore
-P: Restoring bootstrap stage from cache...
-[2026-04-11 02:12:49] lb_bootstrap_copy 
-[2026-04-11 02:12:49] lb_bootstrap_cdebootstrap 
-[2026-04-11 02:12:49] lb_bootstrap_debootstrap 
-P: Begin bootstrapping system...
-[2026-04-11 02:12:50] lb_testroot 
-P: If the following stage fails, the most likely cause of the problem is with your mirror configuration or a caching proxy.
-P: Running debootstrap (download-only)... 
-W: Cannot check Release signature; keyring file not available /usr/share/keyrings/kali-archive-keyring.gpg
-I: Retrieving InRelease 
-I: Retrieving Release 
-E: Failed getting release file http://archive.ubuntu.com/ubuntu/dists/kali-rolling/Release
-P: Begin unmounting filesystems...
-P: Saving caches...
-chroot: failed to run command ‘/usr/bin/env’: No such file or directory
-ritesh@ubuntu:~/Downloads/Sentinel-OS-main$ 
-
-
+(http://http.kali.org/kali/pool/main/k/kali-archive-keyring/)
+sudo dpkg -i kali-archive-keyring_*_all.deb
