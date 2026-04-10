@@ -19,3 +19,6 @@ sudo apt update
 sudo apt install -y live-build debootstrap
 chmod +x sentinel-build.sh
 ./sentinel-build.sh
+
+chmod +x sentinel-live-main/sentinel-live-main/build.sh
+./sentinel-build.sh
