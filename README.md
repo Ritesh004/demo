@@ -12,3 +12,10 @@ xorriso : FAILURE : Cannot find in ISO image: -boot_image ... bin_path='/boot/is
 xorriso : UPDATE :     135 files added in 1 seconds
 xorriso : aborting : -abort_on 'FAILURE' encountered 'FAILURE'
 ritesh@ubuntu:~$ 
+
+
+cd /path/to/Sentinel-OS
+sudo apt update
+sudo apt install -y live-build debootstrap
+chmod +x sentinel-build.sh
+./sentinel-build.sh
