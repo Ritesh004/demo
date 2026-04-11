@@ -32,3 +32,9 @@ wget -qO- 'http://http.kali.org/kali/pool/main/k/kali-archive-keyring/' | grep -
 cd /path/to/Sentinel-OS/sentinel-live-main/sentinel-live-main
 
 ./sentinel-build.sh
+
+
+[2026-04-11 07:22:35] lb_clean --purge
+P: Cleaning chroot
+ERROR: Run this first:
+ln -sf sid /usr/share/live/build/data/debian-cd/kali-rolling
