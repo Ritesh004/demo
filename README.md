@@ -33,14 +33,17 @@ cd /path/to/Sentinel-OS/sentinel-live-main/sentinel-live-main
 
 ./sentinel-build.sh
 
+ln -sf sid /usr/share/live/build/data/debian-cd/kali-rolling
 
 ritesh@ubuntu:~/Downloads/Sentinel-OS-main$ ./sentinel-build.sh
 [sudo] password for ritesh: 
 mkdir: created directory '/home/ritesh/Downloads/Sentinel-OS-main/sentinel-live-main/sentinel-live-main/images/'
 Build of kali-rolling/minimal/amd64 live image failed (see build.log for details)
 Log: /home/ritesh/Downloads/Sentinel-OS-main/sentinel-live-main/sentinel-live-main/build.log
-
-[2026-04-11 07:22:35] lb_clean --purge
+ritesh@ubuntu:~/Downloads/Sentinel-OS-main$ cat /home/ritesh/Downloads/Sentinel-OS-main/sentinel-live-main/sentinel-live-main/build.log
+[2026-04-11 07:37:02] lb_clean --purge
 P: Cleaning chroot
-ERROR: Run this first:
-ln -sf sid /usr/share/live/build/data/debian-cd/kali-rolling
+[2026-04-11 07:41:32] lb_config noauto --apt-indices=false --distribution kali-rolling --debian-installer-distribution kali-rolling --archive-areas main contrib non-free non-free-firmware --debootstrap-options --keyring=/usr/share/keyrings/kali-archive-keyring.gpg --keyring-packages kali-archive-keyring --updates false --backports false --source false --firmware-binary true --firmware-chroot true --mirror-bootstrap http://kali.download/kali --mirror-chroot http://kali.download/kali --mirror-debian-installer http://kali.download/kali --mirror-binary http://http.kali.org/kali --iso-application Sentinel OS --iso-publisher Sentinel --iso-volume Sentinel-Live --linux-packages linux-image --memtest memtest86+ --bootappend-live boot=live components noeject --bootappend-live-failsafe boot=live components noeject memtest noapic noapm nodma nomce nolapic nomodeset nosmp vga=normal --bootappend-install net.ifnames=0 --security false --win32-loader false --debian-installer live -a amd64
+lb config: unrecognized option '--debootstrap-options'
+lb config: unrecognized option '--updates'
+lb config: unrecognized option '--bootappend-live-failsafe'
