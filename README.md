@@ -34,6 +34,12 @@ cd /path/to/Sentinel-OS/sentinel-live-main/sentinel-live-main
 ./sentinel-build.sh
 
 
+ritesh@ubuntu:~/Downloads/Sentinel-OS-main$ ./sentinel-build.sh
+[sudo] password for ritesh: 
+mkdir: created directory '/home/ritesh/Downloads/Sentinel-OS-main/sentinel-live-main/sentinel-live-main/images/'
+Build of kali-rolling/minimal/amd64 live image failed (see build.log for details)
+Log: /home/ritesh/Downloads/Sentinel-OS-main/sentinel-live-main/sentinel-live-main/build.log
+
 [2026-04-11 07:22:35] lb_clean --purge
 P: Cleaning chroot
 ERROR: Run this first:
